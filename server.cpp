@@ -100,6 +100,8 @@ int main(int argc, char* argv[])
     bind(sListen, (SOCKADDR*)&addr, sizeof(addr));
     listen(sListen, SOMAXCONN);
 
+    std::cout << "Server is running ..." << std::endl;
+
     SOCKET Connection;
     for (int i = 0; i < 100; i++)
     {
